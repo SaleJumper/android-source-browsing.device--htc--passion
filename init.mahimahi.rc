@@ -67,7 +67,7 @@ service akmd /system/bin/akmd
     group compass misc input
 
 service wpa_supplicant /system/bin/wpa_supplicant \
-    -Dwext -ieth0 -c/data/misc/wifi/wpa_supplicant.conf
+    -Dwext -c/data/misc/wifi/wpa_supplicant.conf
 #   we will start as root and wpa_supplicant will switch to user wifi
 #   after setting up the capabilities required for WEXT
 #   user wifi
